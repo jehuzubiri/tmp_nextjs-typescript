@@ -1,0 +1,13 @@
+~~ Styling (Recommended HEX)
+   Use HEX for colors (e.g., #FFFFFF for white).
+   Maintain a theme file for centralized control of colors:
+
+--->
+
+export const theme = {
+  primary: '#007BFF',
+  secondary: '#6C757D',
+  danger: '#FF0000',
+  background: '#F8F9FA',
+  text: '#212529'
+};

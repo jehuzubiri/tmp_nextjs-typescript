@@ -1,0 +1,16 @@
+~~ Naming Convensions
+
+> Component files: MyComponent.tsx
+  Also, use descriptive and consistent names:
+   > Files: Button.styles.ts, Header.types.ts
+   > Test files: ComponentName.test.tsx
+   > Page components: PageNamePage.tsx
+> Inside a file:
+   > Functions: doThis // either onClick or doThis
+     > get/Promotion/News   
+   > Variables: const sampleName
+   > Function Props: = (funcPropsA, funcPropsP) => // destructure inside a function 
+   > Component Props: = ({ passedData, passedFunction }) => 
+   > Redux Stores: INITIAL_STATE = { dataA: [], dataB: null }
+   > ClassName: parent_child
+   > ID: parent-child

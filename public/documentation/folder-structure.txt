@@ -1,0 +1,48 @@
+~~ Folder Structure (Creating Components / Tools)
+   Organize your files to maintain scalability and readability:
+
+>>>
+src/
+├── components/    # Reusable components
+│   ├── Button/
+│   │   ├── Button.model.ts
+│   │   ├── Button.styles.ts
+│   │   ├── Button.utils.ts
+│   │   ├── Button.hook.ts
+│   │   └── index.tsx
+├── pages/         # Page-level components
+│   ├── Home/
+│   │   ├── tools
+│   │   ├── components
+│   │   └── index.tsx
+├── hooks/         # Custom React hooks
+├── services/      # API integration
+└── styles/        # Global styles, themes
+
+   Organize your files to maintain scalability and readability:
+
+>>>
+Promotions/
+├── components/
+│   ├── Deposit/
+│   │   ├── index.tsx
+│   │   ├── components
+│   │   ├── Deposit.styles.ts
+│   │   └── Deposit.model.ts
+│   ├── DepositV2/
+│   │   ├── index.tsx
+│   │   ├── components
+│   │   ├── DepositV2.styles.ts
+│   │   └── DepositV2.model.ts
+│   └── Withdrawal/
+│   │   ├── index.tsx
+│   │   ├── components
+│   │   ├── Withdrawal.styles.ts
+│   │   └── Withdrawal.model.ts
+│   └── index.tsx
+├── tools/
+│   ├── Promotions.hook.ts
+│   ├── Promotions.styles.ts
+│   ├── Promotions.utils.ts
+│   └── Promotions.model.ts
+├── index.tsx

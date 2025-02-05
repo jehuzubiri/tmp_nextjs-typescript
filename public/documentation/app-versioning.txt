@@ -1,0 +1,10 @@
+~~ Versioning (Major.Minor.Bug)
+   Follow Semantic Versioning:
+   > Major: Breaking changes (e.g., refactored API, changed structure)
+   > Minor: Backward-compatible new features (e.g., added a new component)
+   > Bug: Fixes (e.g., fixed styling issue or logic bug)
+
+   Example:
+   > 1.0.0: Initial release.
+   > 1.1.0: Added a new feature (e.g., SearchBar).
+   > 1.1.1: Fixed a bug in the Button component.

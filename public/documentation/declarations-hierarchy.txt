@@ -1,0 +1,44 @@
+~~ Hierarchy of Imports, Variables, and Function Declarations
+   Example of a clean component:
+
+--->
+
+// External libraries
+import React from 'react';
+import { useSelector } from 'react-redux';
+
+// Internal components and hooks
+import { Button } from '../Button';
+import { useAuth } from '../../hooks/useAuth';
+
+// Styles and constants
+import { headerStyles } from './Header.styles';
+import { APP_NAME } from '../../utils/constants';
+
+// Component definition
+export const Header: React.FC = () => {
+  // Global state 
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  
+  // Custom hooks
+  const { logout } = useAuth();
+
+  // Local state || UseRef
+  const [counter, setCounter] = useState(0);
+
+  // Functions
+  const handleLogout = () => {
+    logout();
+  };
+
+  // Use effects
+  // Sub components
+
+
+  return (
+    <header style={headerStyles}>
+      <h1>{APP_NAME}</h1>
+      {isLoggedIn && <Button onClick={handleLogout}>Logout</Button>}
+    </header>
+  );
+};

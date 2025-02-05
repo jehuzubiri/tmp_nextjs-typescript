@@ -1,0 +1,21 @@
+~~ Modular Components (Styling, Functions, HTML/Parent)
+   Example: Button Component
+
+--->
+
+const SamplePage: React.FC = () => {
+  //@DESC: separate file for styling
+  const style = useStyles();
+
+  //@DESC: separate file for functions
+  const { handleDecrement, handleIncrement } = useCounterHook();
+
+  return (
+    <Box sx={style.root}>
+      <Button onClick={handleIncrement}>Increment</Button>
+      <Button onClick={handleDecrement}>Decrement</Button>
+    </Box>
+  );
+};
+
+export default SamplePage;

@@ -1,0 +1,18 @@
+~~ Modularization When to Apply DRY: IF THREE OR MORE
+   DRY (Don't Repeat Yourself) Rules:
+   >  Abstract shared logic (e.g., API calls, validation) into reusable utility functions.
+   >  Shared UI patterns (e.g., modals, buttons) should be components.
+   >  Avoid duplication:
+
+--->
+
+// BEFORE (Repeating API calls)
+fetch('/api/users');
+fetch('/api/products');
+
+// AFTER
+const fetchData = (endpoint: string) => fetch(`/api/${endpoint}`);
+fetchData('users');
+fetchData('products');
+
+NOTE: Do apply these principles also on sub components e.g. form inputs
